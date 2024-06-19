@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Convite de Casamento</title>
+</head>
+<body>
+    <div class="card-galzir">
+        <div class="left">
+            <h1 onclick="bela()"> Casamento</h1>
+            <p>Sejam todos convidados ao meu casamento que irá decorrer no dia 21 de Julho de 2024.</p>
+            <a href="convite.pdf"> 
+                <button id="expirableButton">
+                BAIXAR O CONVITE - PDF
+            </button></a>
+            <p id="link">O link vai expirar até o dia 17 de Julho de 2024.</p>
+        </div>
+        <div class="img">
+            <!-- Adicione a imagem aqui se necessário -->
+        </div>
+    </div>
+
+    <script>
+             let Date = new Date;
+             let disableButton = 
+            function bela() {
+               
+
+if(disableButton == 0){
+    document.getElementById("expirableButton").style.display = "none";
+    document.getElementById("link").innerHTML = "O link está espirado!";
+    document.getElementById("link").style.color = "red";
+}
+
+            }
+       
+    </script>
+</body>
+</html>
